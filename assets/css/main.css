@@ -150,13 +150,17 @@ body {
 #website-form {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
-#website-form .small-box {
+#website-form .text-boxes .small-box {
+    position: relative;
     width: 50%;
 }
-#website-form .medium-box {
+#website-form .text-boxes .medium-box {
+    position: relative;
     width: 100%;
 }
 #website-form form #submit-btn {
