@@ -147,7 +147,13 @@ body {
     text-align: center;
     padding: 10px;
 }
-#website-form #submit-btn {
+#website-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#website-form form #submit-btn {
     background-color:rgba(0, 0, 0, 0);
     border: 3px solid white;
     font-size: 20px;
