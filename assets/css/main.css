@@ -153,6 +153,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+#website-form .small-box {
+    width: 50%;
+}
+#website-form .medium-box {
+    width: 100%;
+}
 #website-form form #submit-btn {
     background-color:rgba(0, 0, 0, 0);
     border: 3px solid white;
