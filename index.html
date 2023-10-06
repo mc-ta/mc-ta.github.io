@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Marc's Portfolio Site</title>
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+        <div id="page-container">
+            <header id="website-header">
+                <a href="index.html" class="logo">Marc's Portfolio Site</a>
+                <nav id="nav-bar">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="portfolio-page.html">Portfolio</a></li>
+                        <li><a href="contact-page.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="banner">
+                <div class="inner">
+                    <header>
+                        <h2>Hello!</h2>
+                    </header>
+                    <p>Welcome to my<br/> 
+                        personal website,<br/>
+                        where you can learn <br/>
+                        more about me below,<br/>
+                        check out my portfolio, <br/>
+                        or even send me a<br/>
+                        message!</p>
+                    <footer>
+                        <a href="#main" id="learn-more-btn">Learn More</a>
+                    </footer>
+                </div>
+            </section>
+
+            <section id="main">
+                <h2>About me</h2>
+                <p>I am Marc Talladen, a software developer from Los Angeles, currently enrolled at<br/>
+                    California State University, Northridge, with a major in Computer Science. 
+                </p>
+                <img src="images/IMG_2337.jpg" width="300px">
+            </section>
+            
+            <section id="portfolio-preview">
+                <h2>Portfolio Preview</h2>
+                <p>A preview of some projects I have worked on. Click "See More" for source code and live demos</p>
+                <a href="portfolio-page.html" id="see-more-btn">See More</a>
+            </section>
+
+            <footer id="website-footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/marc-talladen-2b8803214/" target="_blank">
+                        <img id="linkedin-icon" src="images/linkedin_logo.png" alt="LinkedIn">
+                    </a></li>
+                    <li><a href="https://github.com/mc-ta" target="_blank">
+                        <img id="github-icon" src="images/github_logo.png" alt="Github">
+                    </a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <script>
+            window.addEventListener("scroll", function(){
+                var websiteheader = document.querySelector("#website-header");
+                websiteheader.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>
+</html>

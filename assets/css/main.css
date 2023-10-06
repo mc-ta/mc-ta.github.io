@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: rgb(18, 18, 24);
+    scroll-behavior: smooth;
+}
+#page-container {
+    position: relative;
+    min-height: 300vh;
+}
+#website-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding: 40px 60px;
+    z-index: 100;
+}
+#website-header.static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: rgb(36, 36, 48);
+    z-index: 100;
+}
+#website-header.sticky {
+    padding: 10px 60px;
+    background-color: rgb(36, 36, 48);
+}
+#website-header .logo,
+#website-header.static .logo {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+#website-header #nav-bar ul,
+#website-header.static #nav-bar ul,
+#website-footer ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#website-header #nav-bar ul li,
+#website-header.static #nav-bar ul li,
+#website-footer ul li {
+    position: relative;
+    list-style: none;
+}
+#website-header #nav-bar ul li a,
+#website-header.static #nav-bar ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../../images/jake-blucker-8LlJNFLTEm0-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner .inner {
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 8px;
+    width: 240px;
+    height: auto;
+    border: 6px solid white;
+    color: white;
+    background-color: rgba(36, 36, 44, 0.5);
+}
+#banner .inner header {
+    padding: 5px;
+}
+#banner .inner p {
+    padding: 12px;
+    font-weight: 400;
+    color: white;
+}
+#banner .inner footer #learn-more-btn,
+#portfolio-preview #see-more-btn {
+    background-color:rgba(0, 0, 0, 0);
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+#portfolio-preview {
+    height: 50vh;
+}
+#main, #portfolio-preview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    scroll-behavior: smooth;
+}
+#main h2, #portfolio-preview h2 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    padding: 5px;
+}
+#main p, #portfolio-preview p {
+    text-align: center;
+    padding: 10px;
+}
+
+#website-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(36, 36, 48);
+}
+#website-footer #linkedin-icon,
+#website-footer #github-icon {
+    position: relative;
+    width: 100px;
+    padding: 20px;
+}
