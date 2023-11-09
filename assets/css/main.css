@@ -6,12 +6,17 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 
+        var(--scroll-padding, 4rem);
+}
 body {
     background-color: rgb(18, 18, 24);
-    scroll-behavior: smooth;
 }
 #page-container {
     position: relative;
+    width: 100%;
     min-height: 300vh;
 }
 #website-header {
@@ -127,8 +132,9 @@ body {
 #portfolio-preview {
     height: 50vh;
 }
-#main, #portfolio-preview {
+#main, #portfolio-preview, #website-form {
     position: relative;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,34 +142,47 @@ body {
     color: white;
     scroll-behavior: smooth;
 }
-#main h2, #portfolio-preview h2 {
+#main h2, #portfolio-preview h2, #website-form h2 {
+    margin: auto;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 3em;
-    padding: 5px;
+    padding: 8px;
 }
-#main p, #portfolio-preview p {
+#main p, #portfolio-preview p, #website-form p {
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 #website-form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 100vh;
+    width: 90%;
 }
-#website-form .text-boxes .small-box {
-    position: relative;
+#website-form .text-boxes .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#website-form .text-boxes .row .small-box input,
+#website-form .text-boxes .row .medium-box input,
+#website-form .text-boxes .row .large-box textarea {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-size: 1em;
+}
+#website-form .text-boxes .row .small-box input {
     width: 50%;
 }
-#website-form .text-boxes .medium-box {
-    position: relative;
+#website-form .text-boxes .row .medium-box input,
+#website-form .text-boxes .row .large-box textarea {
     width: 100%;
 }
-#website-form form #submit-btn {
+#website-form #submit-btn {
     background-color:rgba(0, 0, 0, 0);
     border: 3px solid white;
     font-size: 20px;
