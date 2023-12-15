@@ -2,11 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Contact | Marc's Portfolio Site</title>
+        <title>Gallery | Marc's Portfolio Site</title>
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
     </head>
     <body>
-        <div id="page-container">
+        <div id="page-container-large">
             <header id="website-header" class="static">
                 <a href="index.html" class="logo">Marc's Portfolio Site</a>
                 <nav id="nav-bar">
@@ -22,10 +26,103 @@
             <section id="main">
                 <header>
                     <h2>Gallery</h2>
-                    <p>Random photo gallery!</p>
+                    <p>Random photo gallery</p>
                 </header>
             </section>
 
+            <section class="slideshow-1">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="/images/photoshoot1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/photoshoot2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/photoshoot3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/images/photoshoot4.jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section>
+                
+
+            <section class="slideshow-2">
+                <div class="slider2">
+                    <div class="slides2">
+                        <input type="radio" name="radio-btn" id="radio-21">
+                        <input type="radio" name="radio-btn" id="radio-22">
+                        <input type="radio" name="radio-btn" id="radio-23">
+                        <input type="radio" name="radio-btn" id="radio-24">
+                        <input type="radio" name="radio-btn" id="radio-25">
+                        <input type="radio" name="radio-btn" id="radio-26">
+                        <input type="radio" name="radio-btn" id="radio-27">
+                        <div class="slide2 first2">
+                            <img src="images/IMG_4755.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/C3A8045E-7875-4364-AE17-91ACBDBD57EA.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/IMG_4764.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/IMG_4944.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/IMG_4946.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/IMG_5051.jpg" alt="">
+                        </div>
+                        <div class="slide2">
+                            <img src="images/IMG_5108.gif" alt="">
+                        </div>
+                        <div class="navigation-auto2">
+                            <div class="autobtn-21"></div>
+                            <div class="autobtn-22"></div>
+                            <div class="autobtn-23"></div>
+                            <div class="autobtn-24"></div>
+                            <div class="autobtn-25"></div>
+                            <div class="autobtn-26"></div>
+                            <div class="autobtn-27"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation-manual2">
+                        <label for="radio-21" class="manual-btn-2"></label>
+                        <label for="radio-22" class="manual-btn-2"></label>
+                        <label for="radio-23" class="manual-btn-2"></label>
+                        <label for="radio-24" class="manual-btn-2"></label>
+                        <label for="radio-25" class="manual-btn-2"></label>
+                        <label for="radio-26" class="manual-btn-2"></label>
+                        <label for="radio-27" class="manual-btn-2"></label>
+                    </div>
+                </div>
+            </section>
+                
             <footer id="website-footer">
                 <ul class="icons">
                     <li><a href="https://www.linkedin.com/in/marc-talladen-2b8803214/" target="_blank">
@@ -36,6 +133,28 @@
                     </a></li>
                 </ul>
             </footer>
+
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function nav1(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+            
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function nav2(){
+                    document.getElementById('radio-2' + counter).checked = true;
+                    counter++;
+                    if(counter > 7) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
         </div>
     </body>
 </html>
