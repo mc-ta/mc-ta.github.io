@@ -23,7 +23,7 @@
                 </nav>
             </header>
 
-            <section id="main">
+            <section id="gallery-main">
                 <header>
                     <h2>Gallery</h2>
                     <p>Random photo gallery</p>
@@ -66,9 +66,9 @@
                         <label for="radio4" class="manual-btn"></label>
                     </div>
                 </div>
+                <script src="assets/js/slideshow.js"></script>
             </section>
-                
-
+            <br/><br/>
             <section class="slideshow-2">
                 <div class="slider2">
                     <div class="slides2">
@@ -121,6 +121,7 @@
                         <label for="radio-27" class="manual-btn-2"></label>
                     </div>
                 </div>
+                <script src="assets/js/slideshow2.js"></script>
             </section>
                 
             <footer id="website-footer">
@@ -134,27 +135,6 @@
                 </ul>
             </footer>
 
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function nav1(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if(counter > 4) {
-                        counter = 1;
-                    }
-                }, 5000);
-            </script>
-            
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function nav2(){
-                    document.getElementById('radio-2' + counter).checked = true;
-                    counter++;
-                    if(counter > 7) {
-                        counter = 1;
-                    }
-                }, 5000);
-            </script>
         </div>
     </body>
 </html>

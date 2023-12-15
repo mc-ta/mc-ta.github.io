@@ -33,7 +33,7 @@ body {
 #page-container-large {
     position: relative;
     width: 100%;
-    min-height: 350vh;
+    min-height: 280vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,10 +149,13 @@ body {
     scroll-behavior: smooth;
     height: 100vh;
 }
+#gallery-main {
+    height: 30vh;
+}
 #portfolio-preview {
     height: 50vh;
 }
-#main, #portfolio-preview, #website-form {
+#main, #portfolio-preview, #website-form, #gallery-main {
     position: relative;
     margin: 0;
     display: flex;
@@ -162,7 +165,7 @@ body {
     color: white;
     scroll-behavior: smooth;
 }
-#main h2, #portfolio-preview h2, #website-form h2 {
+#main h2, #portfolio-preview h2, #website-form h2, #gallery-main h2 {
     margin: auto;
     text-align: center;
     font-family: "Oswald", sans-serif;
@@ -170,17 +173,17 @@ body {
     font-size: 3em;
     padding: 8px;
 }
-#main p, #portfolio-preview p, #website-form p {
+#main p, #portfolio-preview p, #website-form p, #gallery-main p {
     text-align: center;
     padding: 12px;
 }
 #website-form {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 100vh;
 }
 #website-form .text-boxes .row {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,14 +236,18 @@ body {
     padding: 20px;
 }
 .slideshow1 {
+    position: relative;
+    width: 100%;
+    height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .slideshow2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
